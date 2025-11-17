@@ -1,0 +1,146 @@
+/* Base styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container layout */
+.container {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Facebook logo */
+#fbimg {
+  width: 300px;
+}
+
+/* Heading */
+.subtext{
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  max-width: 400px;
+  text-align: center;
+  margin:0 0 40px;
+  line-height: 1.4;
+}
+
+/* Card styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields */
+input {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 0.1px solid rgb(202, 198, 198);
+  background-color: #fdfdfd;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 1px solid #129bd2;
+  outline-color: 2px;
+}
+
+/* Buttons */
+#login,
+#CNA {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login {
+  background-color: rgb(27, 101, 220);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  font-size: 1.4rem;
+}
+
+#login:hover {
+  background-color: rgb(62, 114, 218);
+}
+hr {
+  border: none;
+  border-top: 1px solid #d6d3d3; /* Light black shade */
+  margin: 20px 0;
+}
+#CNA {
+  font-size: 1.2rem;
+  background-color: #16b516;
+  margin: 10px auto;
+  padding: 9px 10px;
+  width: fit-content; 
+  color: white;
+  display: block;
+}
+
+#CNA:hover {
+  background-color: #058a1b;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #0691c3;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.cap{
+  color: black;
+}
+.last{
+  margin: 20px;
+  font-size: 0.9rem;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .card {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .RL {
+    font-size: 2rem;
+  }
+
+  input,
+  #login,
+  #CNA {
+    font-size: 0.95rem;
+  }
+}
